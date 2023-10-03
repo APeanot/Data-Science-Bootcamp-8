@@ -1,4 +1,4 @@
-# Data-Science-Bootcamp-8
+# Data Science Bootcamp 8 by DataRockie
 
 Hi,
 This is my archive for keeping all of my data-related projects with the codes for data analytics: R, SQLite, Python, and Machine Learning.
