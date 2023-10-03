@@ -20,5 +20,5 @@ This is my archive for keeping all of my data-related projects with the codes fo
 - Other Domain Knowledge
 
 Thank you for visiting my github, here, this is my contact to connect me,
-LinkedIn: www.linkedin.com/in/atiwichmeesuk
-Portfolio: https://apeanot.notion.site/Atiwich-s-Portfolio-ca240df01a6442388404184e1d0e9edb?pvs=4
+- LinkedIn: www.linkedin.com/in/atiwichmeesuk
+- Portfolio: https://apeanot.notion.site/Atiwich-s-Portfolio-ca240df01a6442388404184e1d0e9edb?pvs=4
