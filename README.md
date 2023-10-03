@@ -20,6 +20,7 @@ I have studied from 'Data Science Bootcamp 8 by DataRockie'
 - Dashboard
 - Other Domain Knowledge
 
+## Contact
 Thank you for visiting my GitHub.
 Here, this is my contact.
 Let's connect and get to know me more,
