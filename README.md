@@ -1,7 +1,7 @@
 # Data-Science-Bootcamp-8
 
 Hi,
-This is my archive for keeping my all projects with codes from many kinds of data analytics: R, SQLite, Python, and Machine Learning.
+This is my archive for keeping all of my data-related projects with the codes for data analytics: R, SQLite, Python, and Machine Learning.
 
 ## Data Science Knowledge
 "Data Science Bootcamp" provides knowledge in data field for analytics in many topics,
