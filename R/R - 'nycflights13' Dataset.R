@@ -1,3 +1,5 @@
+"nycflights13 = Flights that Departed NYC in 2013"
+
 library(nycflights13)
 
 View(flights)
