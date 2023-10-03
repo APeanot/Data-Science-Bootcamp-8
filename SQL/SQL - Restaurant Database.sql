@@ -1,3 +1,8 @@
+.open restaurant.db
+.mode column
+.table
+
+-- Creating Customer Table
 CREATE TABLE IF NOT EXISTS customers (
     id int,
     name text,
@@ -12,6 +17,7 @@ INSERT INTO customers VALUES
   (4, "Melissa", "England", "melissa@gmail.com"),
   (5, "Rafael", "Jerusalem", "rafael@hotmail.com");
 
+-- Creating Menu Table
 CREATE TABLE IF NOT EXISTS menu (
   menuid int primary key,
   menuname text not null,
@@ -25,6 +31,7 @@ INSERT INTO menu VALUES
 (4, "Pad Gra Prow", 45),
 (5, "Thai Iced Coffee", 30);
 
+-- Creating Ingredient Table
 CREATE TABLE ingredient (
   ingredientid int primary key,
   ingredientname text not null
@@ -37,6 +44,7 @@ INSERT INTO ingredient VALUES
 (4, "Thai Brasil"),
 (5, "Sugar");
 
+-- Creating Menu and Ingredient ID Table
 CREATE TABLE menu_ingredient (
   menuid int not null,
   ingredientid int not null,
@@ -57,6 +65,7 @@ INSERT INTO menu_ingredient VALUES
 (4,4),
 (5,5);
 
+-- Creating Invoice Table
 CREATE TABLE invoice (
   customerid int not null,
   invoicedate text not null,
@@ -71,7 +80,8 @@ INSERT INTO invoice VALUES
 (4, "2023-03-12", 115),
 (5, "2023-04-09", 60);
 
---join
+-- Join Table
+-- Customers with their invoices
 SELECT
   A.id,
   A.name as cus_name,
@@ -80,14 +90,16 @@ FROM customers A
 JOIN invoice B 
 ON A.id = B.customerid;
 
---aggregrate (sum)
+-- Aggregrate (SUM)
+-- Sum of all customers' spending
 SELECT
  sum(totalprice)
 FROM customers A 
 JOIN invoice B 
 ON A.id = B.customerid;
 
---with
+-- With
+-- Find customer(s) with '@hotmail' domain and spent more than 100
 WITH sub1 as (
     SELECT * from customers
     WHERE email like "%@hotmail.com"
@@ -103,7 +115,8 @@ FROM sub1
 JOIN sub2
 ON sub1.id = sub2.customerid;
 
---many to many
+-- Many to Many
+-- Find all ingredient for cooking 'Pad Gra Prow'
 SELECT 
    C.ingredientname  
 FROM menu as A 
@@ -112,7 +125,3 @@ ON A.menuid = B.menuid
 JOIN ingredient as C 
 ON B.ingredientid = C.ingredientid
 WHERE menuname = 'Pad Gra Prow';
-
-.open restaurant.db
-.mode column
-.table
