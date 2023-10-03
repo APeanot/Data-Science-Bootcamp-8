@@ -20,6 +20,8 @@ I have studied from 'Data Science Bootcamp 8 by DataRockie'
 - Dashboard
 - Other Domain Knowledge
 
-Thank you for visiting my github, here, this is my contact to connect me,
+Thank you for visiting my GitHub.
+Here, this is my contact.
+Let's connect and get to know me more,
 - LinkedIn: www.linkedin.com/in/atiwichmeesuk
 - Portfolio: https://apeanot.notion.site/Atiwich-s-Portfolio-ca240df01a6442388404184e1d0e9edb?pvs=4
